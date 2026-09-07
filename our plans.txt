@@ -1,0 +1,2 @@
+look into using canvas instead of div
+
