@@ -1,2 +1,3 @@
 look into using canvas instead of div
 
+create .menuButton class w/ styling
