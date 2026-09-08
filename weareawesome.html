@@ -30,34 +30,8 @@
   </head>
   <body>
         <div id="Hello-World-Box">Compiling...</div>
-        
-        <script>
-            const box = document.getElementById('Hello-World-Box');
-        </script>
-        
         <button type = "button" id = "button">Click Me!</button>
         
-        <script>
-            const button = document.getElementById('button');
-            const gameDiv = document.createElement('div');
-            gameDiv.id = "gameDiv";
-            
-            button.addEventListener("click", function(){
-                if(!document.body.querySelector('#gameDiv')){
-                    document.body.appendChild(gameDiv);
-                } else {
-                    const square = document.createElement('button');
-                    square.className = 'osusquare';
-                    gameDiv.appendChild(square);
-                    square.style.left = Math.floor(Math.random() * (gameDiv.offsetWidth - square.offsetWidth)) + 'px';
-                    square.style.top = Math.floor(Math.random() * (gameDiv.offsetHeight - square.offsetHeight)) + 'px';
-                    square.onclick = function(){
-                        square.remove();
-                    }
-                    
-                }
-                
-            })
-        </script>
+        <script src="js.js"></script>
   </body>
 </html>
